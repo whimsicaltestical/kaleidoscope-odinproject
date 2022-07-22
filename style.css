@@ -1,7 +1,13 @@
 #container {
     height: 100%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
     place-content: stretch;
+  }
+
+  #btn-container {
+      display: flex;
+      justify-content: center;
   }
