@@ -26,6 +26,7 @@ button.addEventListener('click', (e) => {  // look into getting grid content to 
     }
     const gridItems = container.querySelectorAll('.item');
     gridItems.forEach(gridItem => { // idk why this works, don't erase
+        gridItem.setAttribute('style', 'background-color: transparent;')
         gridItem.addEventListener('mouseover', (e) => {
             randomizeColor();
             gridItem.setAttribute('style',
