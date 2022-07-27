@@ -26,15 +26,14 @@ button.addEventListener('click', (e) => {  // look into getting grid content to 
     }
     const gridItems = container.querySelectorAll('.item');
     gridItems.forEach(gridItem => { // idk why this works, don't erase
-        gridItem.setAttribute('style', 'background-color: transparent;')
+        gridItem.setAttribute('style', 'background-color: transparent;');
         gridItem.addEventListener('mouseover', (e) => {
             randomizeColor();
             gridItem.setAttribute('style',
-             `color: transparent; background-color: rgb(${r}, ${g}, ${b});`);
+                `color: transparent; background-color: rgb(${r}, ${g}, ${b});`);
         });
         gridItem.addEventListener('dblclick', (e) =>{gridItem.setAttribute('style', 'background-color: transparent')});
-    })
-})
+    });
 
 //for (let i = 0; i < 256; i++) {
   //const div = document.createElement('div');
